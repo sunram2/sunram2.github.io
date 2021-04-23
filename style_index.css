@@ -1,0 +1,133 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: inherit;
+    border-collapse: collapse;
+    margin:0 auto;
+    padding:0px;
+    color:inherit;
+}
+
+body {
+    background-color:#FF8A00;
+}
+header {
+    display: flex;
+    width:1280px;
+    margin:auto;
+    height:120px;
+}
+main { /*INDEX는 여기만 바뀜*/
+    width:1280px;
+    padding:30px 0;
+    margin:auto;
+}
+section {
+    color:#000000;
+}
+.title {
+    font-size:24px;
+    font-weight:bold;
+}
+.text {
+    font-size:12px;
+}
+footer {
+    width:100%;
+    height:130px;
+    float:left;
+    background-color:#383838;
+    text-align:center;
+    padding:20px 0 20px 0;
+    color:#777;
+    margin-top:30px;
+}
+footer h5 {
+    color:#999;
+}
+.home_icon {
+    width:300px;
+    padding-top:20px;
+}
+.nav {
+    text-align: center;
+    display: inline-block;
+    width:calc(1280px - 300px);
+    padding-top:40px;
+}
+.nav ul {
+    display:inline-block;
+}
+.nav > ul > li {
+    display: inline-block;
+    margin-left:50px;
+    float:left;
+}
+.nav ul > li > a {
+    font-size:18px;
+    color: #fff;
+    position: relative;
+    padding: 6px 20px;
+    display: block;
+}
+.nav ul > li > ul > li > a {
+    color: #222;
+    font-size:16px;
+}
+.nav > ul > li > a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: #ff5400;
+    transition: all .5s ease-out;
+}
+.nav > ul > li > a:hover::after {
+    width: 90%;
+}
+.nav > ul > li:hover > a {
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: all .3s ease-out;
+}
+.nav li {
+    position: relative;
+}
+.nav ul ul {
+    display: none;
+    position: absolute;
+    top:100%;
+    width:100%;
+    background-color: white;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.03);
+}
+.nav li:hover > ul {
+    display:block;
+}
+.nav > ul > li > ul > li:hover > a {
+    color: #ff5400;
+}
+
+
+
+.instagram {
+    padding:10px;
+}
+.footer_small {
+    font-size:10px;
+    padding:5px;
+}
+
+.typo {
+    width:1280px;
+    height:600px;
+}
+.a {
+    padding-top:100px;
+    color:#fff;
+    font-size:120px;
+}
